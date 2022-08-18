@@ -33,14 +33,14 @@ body  {
     margin: 0;
 }
 
-body > *,
+/* body > *,
 body > * > *,
 body > * > * > *,
 body > * > * > * > *,
 body > * > * > * > * > *,
 body > * > * > * > * > * > *  {
     border: 1px dashed white;
-}
+} */
 
 /* main */
 main {
