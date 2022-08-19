@@ -1,11 +1,23 @@
-alert('test')
+let mainText = document.getElementById("mainTXT");
+let button = document.getElementById("test4");
+const container = document.querySelectorAll('.container');
 
-let mainText = document.getElementsByClassName('hi');
+function changeText(event) {
+ event.target.innerHTML = 'test';
 
-let grow = function() {
-    mainText.style.display = 'hidden';
 }
 
-mainText.addEventListener('click', grow);
+function green(event) {
+    event.target.style.backgroundColor = 'green';
+    console.log('test');
+}
 
-document.getElementsByID('test').innerHTML = 'test'
+function blue(event) {
+    event.target.style.backgroundColor = 'blue';
+}
+
+mainText.addEventListener('click', changeText);
+button.addEventListener('click', green);
+for (let i = 0; i < container.length; i++){
+container[i].addEventListener('mouseover', blue);
+}
